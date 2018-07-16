@@ -42,7 +42,7 @@ public class IntList {
         node.setNext(temp);
     }
 
-    public void remove(Int num) {
+    public void remove(int num) {
         if (_head != null) {
 
             if (_head.getValue() == num)
@@ -67,7 +67,7 @@ public class IntList {
         IntNode temp = _head;
         while (temp != null) {
 
-            System.out.println(getValue() + " -->");
+            System.out.println(temp.getValue() + " -->");
             temp = temp.getNext();
         }
         System.out.println(" null");

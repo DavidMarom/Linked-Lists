@@ -10,12 +10,13 @@ public class IntListTwo {
         _tail = null;
     }
 
-    public void insertAfter(int num, IntListTwo node) {
+    public void insertAfter(int num, IntNodeTwo node) {
         IntNodeTwo temp = new IntNodeTwo(num);
         if (_head == null) {
             _head = temp;
             _tail = _head;
-        } else {
+        }
+        else {
 
             IntNodeTwo curr = _head;
             while (curr != node)
